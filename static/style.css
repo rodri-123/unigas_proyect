@@ -2,16 +2,21 @@
 
 body{
 	margin: 0 auto;
+	background-image: url("../static/images/truck.jpg");
+
 }
 
 /* headers */
 .header{
 	background-image: no-repeat;
 	background-color: #0a3a8c;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
-
+	display: block;
+	max-width: 1024px;
+	opacity: 0.6;
+	border-radius: 5%;
 }
 
 .header-image{
@@ -28,15 +33,21 @@ body{
 	background-color: #FF6600;
 }
 
+.span-image{
+	margin: 10px 10px 10px 10px;
+}
+
 .image-fb{
 	background: url("../static/images/facebook1.png") no-repeat 
 		scroll 0 0 transparent ;
 	width: 40px;
 	height: 40px;
 	-webkit-transition:background 1s ease-in-out;
-	display: block;
+	display: inline-block;
 	margin-left: 10px;
-	float: right;
+	float: none;
+	position: relative;
+	vertical-align: top;
 }
 .image-fb:hover{
 	background: url("../static/images/facebook2.png");
@@ -48,10 +59,10 @@ body{
 	width: 40px;
 	-webkit-transition:background 1s ease-in-out;
 	display: inline-block;
-	margin-left: 50%;
-	float: right;
-	height: 60px;
+	float: none;
+	height: 40px;
 	border: 0;
+	position: relative;
 }
 
 .image-twiter:hover{
@@ -69,15 +80,14 @@ body{
 .main{
 	display: inline-block;
 	bottom: 0;
-	vertical-align: text-bottom;
+	position: relative;
+	float: none;
 }
 
 .main-list{
-	margin: 0;
+	padding: 0;
 	text-align: center;
-	margin-left: 250px;
-	padding-left: 0;
-
+	margin: 20px 20px 20px 20px;
 }
 
 .main-item{
@@ -91,7 +101,7 @@ body{
 	text-decoration: none;
 	color: white;
 	font-style: Arial;
-	
+	margin: 20px 0 0;
 }
 .main-link:hover{
 	color: #FF6600;
@@ -109,13 +119,18 @@ body{
 /*footer*/
 
 .footer{
-	margin: 0;
-	background: #0055d4;
+	margin: 0 auto;
+	background: none;
+	max-width: 1024px;
+	opacity: 0.6;
 }
 
 .footer-div{
 	text-align: center;
 	display: inline;
+}
+p:hover{
+	color: #FF6600;
 }
 p{
 	color: white;
